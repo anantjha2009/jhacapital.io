@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holdings | Jha Capital</title>
+    <style>
+        :root { --bg: #0d1117; --card: #161b22; --text: #c9d1d9; --accent: #58a6ff; --border: #30363d; --success: #2ea44f; }
+        body { font-family: -apple-system, system-ui, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        nav { display: flex; justify-content: center; gap: 2rem; background: var(--card); border-bottom: 1px solid var(--border); padding: 1rem; }
+        nav a { color: var(--text); text-decoration: none; font-weight: 500; font-size: 1.1rem; }
+        nav a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+        main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; margin-top: 1.5rem; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: #21262d; color: #fff; font-weight: 600; }
+        .allocation-bar { background: #30363d; border-radius: 4px; height: 8px; width: 100px; display: inline-block; margin-right: 8px; }
+        .allocation-fill { background: var(--accent); height: 100%; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Research</a>
+        <a href="holdings.html" class="active">Holdings</a>
+        <a href="about.html">About Me</a>
+    </nav>
+    <main>
+        <h1>Active Capital Allocations</h1>
+        <p>A transparent ledger showcasing real-time active strategy exposure across capital allocations.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Strategy Allocation</th>
+                    <th>Weight</th>
+                    <th>Execution Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>NVDA</strong></td>
+                    <td>Swing Trade Support Retest</td>
+                    <td>
+                        <div class="allocation-bar"><div class="allocation-fill" style="width: 45%;"></div></div> 45%
+                    </td>
+                    <td style="color: var(--accent);">Accumulating Spot</td>
+                </tr>
+                <tr>
+                    <td><strong>CASH</strong></td>
+                    <td>Dry Powder / IPO Reserve</td>
+                    <td>
+                        <div class="allocation-bar"><div class="allocation-fill" style="width: 55%;"></div></div> 55%
+                    </td>
+                    <td>Liquid Waiting</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
 
