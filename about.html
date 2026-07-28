@@ -1,1 +1,35 @@
-haewifh oa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Jha Capital</title>
+    <style>
+        :root { --bg: #0d1117; --card: #161b22; --text: #c9d1d9; --accent: #58a6ff; --border: #30363d; }
+        body { font-family: -apple-system, system-ui, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        nav { display: flex; justify-content: center; gap: 2rem; background: var(--card); border-bottom: 1px solid var(--border); padding: 1rem; }
+        nav a { color: var(--text); text-decoration: none; font-weight: 500; font-size: 1.1rem; }
+        nav a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+        main { max-width: 800px; margin: 3rem auto; padding: 0 1rem; display: flex; gap: 2rem; align-items: center; wrap: wrap; }
+        .profile-pic { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); background: #30363d; }
+        .bio-content { flex: 1; }
+        h1 { margin-top: 0; color: #fff; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Research</a>
+        <a href="holdings.html">Holdings</a>
+        <a href="about.html" class="active">About Me</a>
+    </nav>
+    <main>
+        <!-- Replace profile.jpg with the exact name of an image you upload to github -->
+        <img src="profile.jpg" alt="Anant Jha Profile Picture" class="profile-pic" onerror="this.src='https://placehold.co'">
+        <div class="bio-content">
+            <h1>About Anant Jha</h1>
+            <p>I am an independent market analyst and strategist currently attending Trumbull High School. My passion lies at the intersection of quantitative analysis, computer science, and financial market micro-structures.</p>
+            <p>At age 16, I built an active execution portfolio focused on technical momentum, swing setups, and initial public offering (IPO) evaluations. This platform functions as an open analytical log of my daily systematic research methodologies.</p>
+        </div>
+    </main>
+</body>
+</html>
